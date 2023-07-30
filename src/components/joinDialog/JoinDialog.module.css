@@ -1,0 +1,13 @@
+.dialog {
+  text-align: center;
+  height: 270px;
+}
+
+.dialog .dialogContent {
+  display: flex;
+  align-items: center;
+}
+.dialog .title {
+  font-size: 35px;
+  font-weight: 900;
+}

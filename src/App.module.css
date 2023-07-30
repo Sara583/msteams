@@ -1,0 +1,60 @@
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  height: 100vh;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 0.5fr);
+  gap: 40px;
+}
+.card {
+  margin: 8px;
+  height: 420px;
+  max-height: 420px;
+}
+.cardBottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  color: #d7d3d3;
+  background-color: #1976d2;
+  margin: 0px;
+}
+.card .name {
+  font-weight: bold;
+  text-align: center;
+}
+.card .btn {
+  width: 100%;
+  background-color: #1976d2;
+  color: aliceblue;
+}
+.card .btn:disabled {
+  opacity: 0.5;
+  color: aliceblue;
+}
+.card .icon {
+  margin: 2px;
+  color: #0f5ba7;
+}
+.card .btn:hover {
+  background-color: #1976d2b2;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+}
